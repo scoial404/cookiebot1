@@ -1,0 +1,20 @@
+{
+  "token": "MTE1OTUwMzA2NzQ4NjYzODE1MQ.G4H6F5.KUKEAsAELOrHk6nxPNaWef0XLz-4u0eCPBVUF8",
+  "giveawayRole": "Owner",
+  "ownerID": "723034230929621083",
+
+  "everyoneMention": true,
+  "hostedBy": true,
+  "botsCanWin": false,
+
+  "prefix": "!",
+
+  "embedColor": "#00fbff",
+  "embedColorEnd": "#FF0000",
+  "reaction": "🎉",
+  "giveawayEmoji": "<a:tadap:1149387656032165928>",
+
+  "botName": "Cookie Bot",
+  "statusType": "PLAYING",
+  "statusActivity": "CookieBot"
+}
