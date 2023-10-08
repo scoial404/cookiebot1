@@ -8,10 +8,10 @@ module.exports = {
      */
     run : async(client, message) => {
         const ch = message.guild.channels.cache.find(ch => ch.name === message.author.id)
-        if(ch) return message.channel.send('You already have a ticket open.')
+        if(ch) return message.channel.send('יש לך כבר טיקט פתוח')
         message.guild.channels.create(`${message.author.id}`, {
             type : 'text',
-            parent : '1148677128196472935',
+            parent : '1160255359387189484',
             permissionOverwrites : [
                 {
                     id : message.guild.id,
@@ -23,8 +23,8 @@ module.exports = {
                 }
             ]
         }).then(async channel=> {
-            message.reply(`click <#${channel.id}> to view your ticket`)
-            channel.send(`${message.author}, welcome to your ticket!`)
+            message.reply(`תעבור לחדר <#${channel.id}> כדי לראות את הטיקט`)
+            channel.send(`${message.author}, בטיקט החדש שלך, אנא פרט את הבעיה שלך ונשתדל לטפל בה בהקדם האפשרי. :tools::bulb:\n\nאנא שים לב:\n:no_entry_sign: אנא אל תתייג איש צוות או רול מסוים.\n⌛️ אנא המתן בסבלנות עד שצוות התמיכה יגיע לטיפול בטיקט שלך.\n:briefcase: בינתיים, אם יש לך מידע נוסף או שאלות נוספות, אנא ציין אותם בטיקט כדי שנוכל לספק לך עזרה מיטבית.\n\nתודה רבה על ההבנה והסבלנות! :pray::sparkles:`)
         })
     }
 }
